@@ -1,0 +1,135 @@
+body {
+    background-color: #393535; /* Utilisez une couleur de fond appropriée */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.top-bar {
+    background-color: rgb(48, 38, 38);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#test {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: center;
+}
+
+#playlist li 
+{
+    margin-bottom: 5px;
+    color: white;
+    font-style: italic;
+    border-color: 1px solid black;
+    font-weight: bolder;
+    border-radius: 18px;
+    background-color: rgb(69, 69, 161);
+}
+
+#playlist li:hover {
+    background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8a2be2); /* Dégradé arc-en-ciel */
+    background-size: 200% auto; /* Doublez la largeur pour permettre le défilement */
+    animation: rainbow 5s linear infinite; /* Animation de défilement */
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0 0; /* Position initiale */
+    }
+    100% {
+        background-position: 200% 0; /* Position finale (défilement complet) */
+    }
+}
+
+.playlist-test
+{
+    width: 50%;
+}
+
+ul{
+    list-style: none;
+}
+
+
+/* CSS pour masquer les éléments non sélectionnés */
+.hidden {
+    display: none;
+}
+
+/* CSS pour mettre en avant l'élément sélectionné */
+.selected {
+    z-index: 1; /* Met l'élément au premier plan */
+    width: 100%; /* Ajuster la largeur */
+    max-width: 500px; /* Ajouter une largeur maximale si nécessaire */
+    margin: 0 auto; /* Centrer horizontalement */
+}
+
+.selected-music-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vinyle {
+    animation: turn 4s infinite linear;
+    max-width: 400px;
+    height: auto;
+    position: absolute; /* Utiliser la position absolue */
+    left: 60%; /* Positionner le disque horizontalement au centre */
+    top: 150px; /* Positionner le disque à 1 pixel du haut */
+    transform: translateX(-50%, -50%); /* Centrer horizontalement */
+}
+
+.cov {
+    max-width: 120px;
+    height: auto;
+    position: absolute; 
+    left:69%; /* Positionner l'image horizontalement au centre */
+    top: 42%; /* Positionner l'image verticalement au centre */
+    border-radius: 100%;
+    animation: turn 4s infinite linear;
+    transform: translateX(-50%, -50%);
+}
+
+/* Optionnel : Ajoute une transition pour un effet de transition plus fluide */
+.cov {
+    transition: transform 0.3s ease;
+}
+
+
+
+
+
+@keyframes turn {
+    0%{
+        transform: rotate(0deg) scale(1);
+
+    }
+
+    50%{
+        transform: rotate(-180deg) scale(1);
+
+    }
+
+    100%{
+        transform: rotate(-360deg) scale(1);
+    }
+}
+
+.disque.pause .vinyle {
+    animation: none; /* Arrête l'animation lorsque la classe "pause" est présente */
+}
+.disque.pause .cov{
+    animation: none;
+}
+
+
+
+
