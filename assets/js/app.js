@@ -75,7 +75,7 @@ const getData = async () =>{
     allLi.forEach((li) => {   
         li.addEventListener("click", function(elem) {
             const id = parseInt(li.id);
-            const searchById = dbMusic.find((element) => element.id === id);
+            const searchById = data.find((element) => element.id === id);
             if (searchById) {
                 console.log(searchById);
                 lecteur.src = `${config.urlSound}${searchById.sound}`;
@@ -95,8 +95,8 @@ const getData = async () =>{
     };
     
     randomButton.addEventListener("click", function () {
-        const randomIndex = Math.floor(Math.random() * dbMusic.length);
-        const randomMusic = dbMusic[randomIndex];
+        const randomIndex = Math.floor(Math.random() * data.length);
+        const randomMusic = data[randomIndex];
         if (randomMusic) {
             lecteur.src = `${config.urlSound}${randomMusic.sound}`;
             const selectedLi = document.getElementById(randomMusic.id);
