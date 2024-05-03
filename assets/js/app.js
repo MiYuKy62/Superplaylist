@@ -31,7 +31,7 @@ const expandAndCenterCover = (selectedDiv) => {
         sibling.classList.add("hidden");
     });
     disque.classList.remove("pause");
-    selectedDiv.querySelector('.disque').classList.remove('pause'); // Afficher le disque pour la musique sélectionnée    
+    selectedDiv.querySelector('disque').classList.remove('pause'); // Afficher le disque pour la musique sélectionnée    
 };
 
 const closeExpandedCover = () => {
@@ -45,7 +45,7 @@ const closeExpandedCover = () => {
         siblings.forEach((sibling) => {
             sibling.classList.remove("hidden");
         });
-        selectedDiv.querySelector('.disque').classList.add('pause'); // Masquer le disque lorsque la cover est fermée
+        selectedDiv.querySelector('disque').classList.add('pause'); // Masquer le disque lorsque la cover est fermée
     }
 };
 
