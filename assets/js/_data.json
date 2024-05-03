@@ -5,41 +5,41 @@
         "cover" : "1.jpg ",
         "sound" : "Lâme_du_phoenix.mp3",
         "title" : " L'âme du phoenix ",
-        "artiste" :" Yuston XIII " 
+        "category" :" Yuston XIII " 
     },
     {
         "id": 2,
         "cover" : "bad.jpg ",
         "sound" : "Bad_Liar.mp3",
         "title" : " Bad Liar ",
-        "artiste" :" Imagine Dragons  " 
+        "category" :" Imagine Dragons  " 
     },
     {
         "id": 3,
         "cover" : "vis.jpg ",
         "sound" : "melodie.mp3",
         "title" : "Je vis cette mélodie ",
-        "artiste" :" Jok'Air " 
+        "category" :" Jok'Air " 
     },
     {
         "id": 4,
         "cover" : "1.jpg ",
         "sound" : "lumierenoire.mp3",
         "title" : " Lumière noire  ",
-        "artiste" : " Yuston XIII " 
+        "category" : " Yuston XIII " 
     },
     {
         "id": 5,
         "cover" : "believer.jpg",
         "sound" : "believer.mp3",
         "title" : "Believer",
-        "artiste" : "Imagine Dragons" 
+        "category" : "Imagine Dragons" 
     },
     {
         "id": 6,
         "cover" : "holdon.jpg",
         "sound" : "hold_on.mp3",
         "title" : "Hold On",
-        "artiste" : "Chris Overstreet" 
+        "category" : "Chris Overstreet" 
     }
 ]

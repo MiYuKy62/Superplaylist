@@ -67,7 +67,7 @@ const getData = async () =>{
     data = dbMusic.result
     data.forEach((music) => {
         const textLengthClass = music.title.length > 15 ? "long-text" : "";
-        playlist.innerHTML += `<li id="${music.id}"><h2>${music.title} </h2><div><small> ${music.categorygit } </small> </div></li> ` 
+        playlist.innerHTML += `<li id="${music.id}"><h2>${music.title} </h2><div><small> ${music.category} </small> </div></li> ` 
     });
     const allLi = document.querySelectorAll("li");
 
